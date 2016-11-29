@@ -7,18 +7,18 @@ POSITION
 
 /* Types of Positioning */
 @include prefix {
-	&static 	  { position: static; }
-	&relative 	{ position: relative; }
-	&fixed 		  { position: fixed; }
-	&absolute 	{ position: absolute; }
+  &static     { position: static; }
+  &relative   { position: relative; }
+  &fixed      { position: fixed; }
+  &absolute   { position: absolute; }
 }
 
 /* Positioning Values */
 @include prefix {
   @for $i from 1 through length($spaces) {
-      &top-#{($i - 1)} 	  { top: 		nth($spaces, $i) + px; }
-      &bottom-#{($i - 1)}	{ bottom: nth($spaces, $i) + px; }
-      &left-#{($i - 1)} 	{ left: 	nth($spaces, $i) + px; }
-      &right-#{($i - 1)} 	{ right:	nth($spaces, $i) + px; }
+      &top-#{($i - 1)}    { top:    nth($spaces, $i) + px; }
+      &bottom-#{($i - 1)} { bottom: nth($spaces, $i) + px; }
+      &left-#{($i - 1)}   { left:   nth($spaces, $i) + px; }
+      &right-#{($i - 1)}  { right:  nth($spaces, $i) + px; }
   }
 }

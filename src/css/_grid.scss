@@ -6,12 +6,12 @@ GRID
 
 
 @mixin grid($cols) {
-	@include prefix {
-	    &col#{$cols}of#{$columns}  {
-	     width: ((100% / $columns ) * $cols);
-	     @content;
-	   }
-	}
+    @include prefix {
+        &col#{$cols}of#{$columns}  {
+         width: ((100% / $columns ) * $cols);
+         @content;
+       }
+    }
 }
 
 @for $i from 1 to $columns {
