@@ -1,10 +1,8 @@
 # React Sass Library
 
-A simple hello world using react, webpack, babel, es2015 & sass. 
+Compiles from `src` path to `dist`. Source maps are in development mode.
 
-Compiles all the scripts & styles from `src` path to `dist`. The kit generates source maps by default in development mode.
-
-##Installation 
+##Install
 
 ```bash
     $ npm install 
@@ -12,7 +10,7 @@ Compiles all the scripts & styles from `src` path to `dist`. The kit generates s
 
 ##Usage
 
-To build on development mode, generates a minified version with source map.
+To build on dev mode, minified with source maps
 
 ```bash
     $ npm run build
@@ -30,4 +28,4 @@ To use webpack dev server & watch,
     $ npm start
 ```
 
-Listens at **http://localhost:8080** 
+Go to **http://localhost:8080** 
