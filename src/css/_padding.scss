@@ -1,0 +1,63 @@
+/*
+
+PADDING
+
+
+base:
+ p = padding
+
+direction:
+  t = top
+  b = bottom
+  l = left
+  r = right
+  x = left / right
+  y = top / bottom
+  a = all
+
+degree:
+  0 = none
+  1 = first step
+  2 = second step
+  3 = third step
+  4 = fourth step
+  5 = fifth step
+  6 = sixth step
+
+breakpoints:
+  sm = breakpoint-sm
+  md = breakpoint-md
+  lg = breakpoint-lg
+
+*/
+
+// :root {
+//   --spacing-none: 0;
+//   --spacing-xs: 0.25rem;
+//   --spacing-sm: 0.5rem;
+//   --spacing-md: 1rem;
+//   --spacing-lg: 2em;
+//   --spacing-xlg: 3rem;
+//   --spacing-xxlg: 6rem;
+//   --spacing-xxxlg: 10rem;
+
+// }
+
+@include prefix {
+  @for $i from 1 through length($spaces) {
+      &pa#{($i - 1)} {  padding:          nth($spaces, $i) + px; }
+      &pl#{($i - 1)} {  padding-left:     nth($spaces, $i) + px; }
+      &pr#{($i - 1)} {  padding-right:    nth($spaces, $i) + px; }
+      &pt#{($i - 1)} {  padding-top:      nth($spaces, $i) + px; }
+      &pb#{($i - 1)} {  padding-bottom:   nth($spaces, $i) + px; }
+
+      &px#{($i - 1)} {  padding-left:        nth($spaces, $i) + px;
+                        padding-right:       nth($spaces, $i) + px; }
+
+      &py#{($i - 1)} {  padding-top:         nth($spaces, $i) + px;
+                        padding-bottom:      nth($spaces, $i) + px; }
+
+
+  }
+}
+

@@ -1,0 +1,41 @@
+/*
+
+MEDIA QUERIES
+
+
+*/
+
+$breakpoints: ( 
+  xs: null,
+  s: 37rem,
+  m: 45rem,
+  l: 56rem,
+);
+
+// Add a media query at this point
+@mixin respond-to($breakpoint, $value) {
+  @if $value == null  {
+    @content;
+    } @else {
+     @media (min-width: $value) {
+      @content;
+    }
+  }
+}
+
+
+// Add a prefix to the class if media queries exist
+@mixin prefix {
+  @each $breakpoint, $value in $breakpoints {
+    @include respond-to($breakpoint, $value) {
+           .#{$breakpoint}-{
+        @content;
+      }
+    }
+  }
+}
+
+
+
+
+

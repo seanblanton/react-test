@@ -1,0 +1,31 @@
+/*
+
+GRID
+
+*/
+
+
+@mixin grid($cols) {
+	@include prefix {
+	    &col#{$cols}of#{$columns}  {
+	     width: ((100% / $columns ) * $cols);
+	     @content;
+	   }
+	}
+}
+
+@for $i from 1 to $columns {
+  @include grid($i) {  }
+}
+
+
+@include prefix {
+
+  @for $i from 1 through length($spaces) {
+      &maxw#{($i - 1)} { max-width:       nth($spaces, $i) + px; }
+      &minw#{($i - 1)} { min-width:       nth($spaces, $i) + px; }
+  }
+}
+
+
+
