@@ -5,40 +5,40 @@ BORDERS
 
 */
 
-.bs-none		{ border-style: none;				}
-.bs-solid 		{ border-style: solid;	 			}
-.bs-dotted 		{ border-style: dotted;				}
-.bs-dashed 		{ border-style: dashed;				}
-.bs-inset 		{ border-style: inset; 				} 
-.bs-outset 		{ border-style: outset;				}
+.bs-none        { border-style: none;               }
+.bs-solid       { border-style: solid;              }
+.bs-dotted      { border-style: dotted;	            }
+.bs-dashed      { border-style: dashed;             }
+.bs-inset       { border-style: inset;              } 
+.bs-outset      { border-style: outset;             }
 
-.bs-l-none		{ border-left-style: none;			}
-.bs-l-solid 	{ border-left-style: solid;		 	}
-.bs-l-dotted 	{ border-left-style: dotted;		}
-.bs-l-dashed 	{ border-left-style: dashed;		}
-.bs-l-inset 	{ border-left-style: inset; 		} 
-.bs-l-outset 	{ border-left-style: outset;		}
+.bs-l-none      { border-left-style: none;          }
+.bs-l-solid     { border-left-style: solid;         }
+.bs-l-dotted    { border-left-style: dotted;        }
+.bs-l-dashed    { border-left-style: dashed;        }
+.bs-l-inset     { border-left-style: inset;         } 
+.bs-l-outset    { border-left-style: outset;        }
 
-.bs-r-none		{ border-right-style: none;			}
-.bs-r-solid 	{ border-right-style: solid;	 	}
-.bs-r-dotted 	{ border-right-style: dotted;		}
-.bs-r-dashed 	{ border-right-style: dashed;		}
-.bs-r-inset 	{ border-right-style: inset; 		} 
-.bs-r-outset 	{ border-right-style: outset;		}
+.bs-r-none      { border-right-style: none;         }
+.bs-r-solid     { border-right-style: solid;        }
+.bs-r-dotted    { border-right-style: dotted;       }
+.bs-r-dashed    { border-right-style: dashed;       }
+.bs-r-inset     { border-right-style: inset;        } 
+.bs-r-outset    { border-right-style: outset;       }
 
-.bs-b-none		{ border-bottom-style: none;		}
-.bs-b-solid 	{ border-bottom-style: solid;	 	}
-.bs-b-dotted 	{ border-bottom-style: dotted;		}
-.bs-b-dashed 	{ border-bottom-style: dashed;		}
-.bs-b-inset 	{ border-bottom-style: inset; 		} 
-.bs-b-outset 	{ border-bottom-style: outset;		}
+.bs-b-none      { border-bottom-style: none;        }
+.bs-b-solid     { border-bottom-style: solid;       }
+.bs-b-dotted    { border-bottom-style: dotted;      }
+.bs-b-dashed    { border-bottom-style: dashed;      }
+.bs-b-inset     { border-bottom-style: inset;       } 
+.bs-b-outset    { border-bottom-style: outset;      }
 
-.bs-t-none		{ border-top-style: none;			}
-.bs-t-solid 	{ border-top-style: solid;	 		}
-.bs-t-dotted 	{ border-top-style: dotted;			}
-.bs-t-dashed 	{ border-top-style: dashed;			}
-.bs-t-inset 	{ border-top-style: inset; 			} 
-.bs-t-outset 	{ border-top-style: outset;			}
+.bs-t-none	     { border-top-style: none;          }
+.bs-t-solid     { border-top-style: solid;          }
+.bs-t-dotted    { border-top-style: dotted;	        }
+.bs-t-dashed    { border-top-style: dashed;         }
+.bs-t-inset     { border-top-style: inset;          } 
+.bs-t-outset    { border-top-style: outset;         }
 
 @for $i from 1 through length($borderWidths) {
     .bw#{($i - 1)} { border-width: nth($borderWidths, $i) + px; }
