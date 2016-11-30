@@ -1,4 +1,5 @@
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var Purify = require("purifycss-webpack-plugin");
 
 function getDevTool() {
     if (process.env.NODE_ENV !== 'production') {
@@ -28,13 +29,27 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('css!sass')
-            }
+                loader: ExtractTextPlugin.extract("style", "css!sass")
+            },
         ]
     },
     plugins: [
-        new ExtractTextPlugin('dist/css/main.css', {
-            allChunks: true
+        new ExtractTextPlugin('dist/css/[name].css', {
+          allChunks: true
+        }),
+        new Purify({
+            basePath: __dirname,
+            paths: [
+                'dist/**/*.html',
+                'dist/**/*.js'
+            ],
+            resolveExtensions: ['.html','.js'],
+            purifyOptions: {
+                minify: true,
+                rejected: true,
+                info: true,
+            }
         })
     ]
 };
+ 

@@ -1,7 +1,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HelloForm from './HelloForm';
+import Container from './Container';
 
-
-ReactDOM.render(<HelloForm />, document.getElementById('app'));
+ReactDOM.render(<Container />, document.getElementById('app'));
