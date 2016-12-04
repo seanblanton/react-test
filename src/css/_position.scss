@@ -1,24 +1,37 @@
 /*
 
-POSITION
-
+Position Utility Classes
 
 */
 
-/* Types of Positioning */
+// Positions
+/* Responsive position utilites */
 @include prefix {
+
+  /* Set position to static */
   &static     { position: static; }
+  /* Set position to relative */
   &relative   { position: relative; }
+  /* Set position to fixed */
   &fixed      { position: fixed; }
+  /* Set position to absolute */
   &absolute   { position: absolute; }
 }
 
-/* Positioning Values */
+// Positions
 @include prefix {
+
   @for $i from 1 through length($spaces) {
-      &top-#{($i - 1)}    { top:    nth($spaces, $i) + px; }
-      &bottom-#{($i - 1)} { bottom: nth($spaces, $i) + px; }
-      &left-#{($i - 1)}   { left:   nth($spaces, $i) + px; }
-      &right-#{($i - 1)}  { right:  nth($spaces, $i) + px; }
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
+
+    /* set top to {$size}px at breakpoint {$breakpoint} */
+    &top-#{$scale}    { top:    #{$size}px; }
+    /* set bottom to {$size}px at breakpoint {$breakpoint} */
+    &bottom-#{$scale} { bottom: #{$size}px; }
+    /* set left to {$size}px at breakpoint {$breakpoint} */
+    &left-#{$scale}   { left:   #{$size}px; }
+    /* set right to {$size}px at breakpoint {$breakpoint} */
+    &right-#{$scale}  { right:  #{$size}px; }
   }
 }

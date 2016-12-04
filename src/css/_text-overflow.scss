@@ -1,10 +1,10 @@
 /*
 
-TEXT OVERFLOW
-
+Text Overflow Utilities
 
 */
 
-.overflow-e     { text-overflow: ellipsis; }
-.overflow-c     { text-overflow: clip; }
-.overflow-dash  { text-overflow: "—" }
+.overflow-scroll   { text-overflow: scroll; }
+.overflow-e        { text-overflow: ellipsis; }
+.overflow-c        { text-overflow: clip; }
+.overflow-dash     { text-overflow: "—" }

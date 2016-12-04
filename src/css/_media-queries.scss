@@ -1,11 +1,11 @@
 /*
 
-MEDIA QUERIES
-
+Media Query Mixins
 
 */
 
-$breakpoints: ( 
+// Media Query Variables
+$breakpoints: (
   xs: null,
   s: 37rem,
   m: 45rem,
@@ -34,8 +34,3 @@ $breakpoints: (
     }
   }
 }
-
-
-
-
-

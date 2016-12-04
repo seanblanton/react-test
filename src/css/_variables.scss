@@ -12,15 +12,15 @@ $sans-serif: -apple-system, BlinkMacSystemFont,
                 sans-serif;
 
 
-$fontSizes: 12, 16, 19, 24, 32, 64;
+$fontSizes: 64, 32, 19, 16, 12;
 
 $spaces: 0, 4, 8, 16, 24, 32, 64, 128;
 
-$borderWidths: 0, 1, 2, 3, 4; 
+$borderWidths: 0, 1, 2, 3, 4;
 
 $borderRadii: 0, 2, 3, 4, 50;
-  
-$colors: ( 
+
+$colors: (
     white: rgba(255,255,255,1),
     black: rgba(0,0,0,1),
     blue: rgba(3,110,200,1),

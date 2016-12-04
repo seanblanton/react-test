@@ -1,10 +1,20 @@
 /*
 
-TEXT ALIGNMENT
-
+Text Alignment Utilities
 
 */
 
 .tal { text-align: left; }
 .tac { text-align: center; }
 .tar { text-align: right; }
+
+/* vertical align middle */
+.v-middle        {   vertical-align: middle; }
+/* vertical align top */
+.v-top           {   vertical-align: top; }
+/* vertical align bottom */
+.v-bottom        {   vertical-align: bottom; }
+/* vertical align text-top */
+.v-text-top      {   vertical-align: text-top; }
+/* vertical align text-bottom */
+.v-text-bottom   {   vertical-align: text-bottom; }

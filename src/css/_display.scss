@@ -1,19 +1,23 @@
 /*
 
-DISPLAY
-
+Display Utilities
 
 */
 
+// Responsive display utilities
+@include prefix {
 
-.block          {   display: block; }
-.ib             {   display: inline-block; }
-.inline         {   display: inline; }
+  // Include to cause an element to hide at a specific breakpoint
+  &hide           {   display: none; }
 
-.table          {   display: table; }
-.table-cell     {   display: table-cell; }
+  // display utilities
+  &block          {   display: block; }
+  &ib             {   display: inline-block; }
+  &inline         {   display: inline; }
 
-.v-middle       {   vertical-align: middle; }
+  // table utilities
+  &table          {   display: table; }
+  &table-cell     {   display: table-cell; }
+  &table-fixed    {   table-layout: fixed; }
 
-
-
+}

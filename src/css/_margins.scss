@@ -1,12 +1,11 @@
 /*
 
-MARGINS
+Margin space utilities
 
+Base:
+  m = margin
 
-base:
- m = margin
-
-direction:
+Direction:
   t = top
   b = bottom
   l = left
@@ -15,55 +14,49 @@ direction:
   y = top / bottom
   a = all
 
-degree:
-  0 = none
-  1 = first step
-  2 = second step
-  3 = third step
-  4 = fourth step
-  5 = fifth step
-  6 = sixth step
-
-breakpoints:
-  sm = breakpoint-sm
-  md = breakpoint-md
-  lg = breakpoint-lg
-
 */
 
-// :root {
-//   --spacing-none: 0;
-//   --spacing-xs: 0.25rem;
-//   --spacing-sm: 0.5rem;
-//   --spacing-md: 1rem;
-//   --spacing-lg: 2em;
-//   --spacing-xlg: 3rem;
-//   --spacing-xxlg: 6rem;
-//   --spacing-xxxlg: 10rem;
-  
-// }
-
-
-
+/* Add breakpoint prefixes to classnames */
 @include prefix {
 
-  &ml-auto {   margin-left: auto;  }
-  &mr-auto {   margin-right: auto; }
-  &mx-auto {   margin-left: auto;
-               margin-right: auto; }
-
-
   @for $i from 1 through length($spaces) {
-      &ma#{($i - 1)} {  margin:          nth($spaces, $i) + px; }
-      &ml#{($i - 1)} {  margin-left:     nth($spaces, $i) + px; }
-      &mr#{($i - 1)} {  margin-right:    nth($spaces, $i) + px; }
-      &mt#{($i - 1)} {  margin-top:      nth($spaces, $i) + px; }
-      &mb#{($i - 1)} {  margin-bottom:   nth($spaces, $i) + px; }
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
 
-      &mx#{($i - 1)} {  margin-left:    nth($spaces, $i) + px;
-                        margin-right:   nth($spaces, $i) + px; }
+      /* set a {$scale} margin on all sides at breakpoint {$breakpoint} */
+      &ma#{$scale} {  margin:          #{$size}px; }
+      /* set a {$scale} margin on the left side at breakpoint {$breakpoint} */
+      &ml#{$scale} {  margin-left:     #{$size}px; }
+      /* set a {$scale} margin on the right side at breakpoint {$breakpoint} */
+      &mr#{$scale} {  margin-right:    #{$size}px; }
+      /* set a {$scale} margin on the top at breakpoint {$breakpoint} */
+      &mt#{$scale} {  margin-top:      #{$size}px; }
+      /* set a {$scale} margin on the bottom at breakpoint {$breakpoint} */
+      &mb#{$scale} {  margin-bottom:   #{$size}px; }
 
-      &my#{($i - 1)} {  margin-top:     nth($spaces, $i) + px;
-                        margin-bottom:  nth($spaces, $i) + px; }
+      /* set a {$scale} margin on the left and right sides at breakpoint {$breakpoint} */
+      &mx#{$scale} {
+        margin-left:     #{$size}px;
+        margin-right:    #{$size}px;
+      }
+
+      /* set a {$scale} margin on the top and bottom at breakpoint {$breakpoint} */
+      &my#{$scale} {
+        margin-top:      #{$size}px;
+        margin-bottom:   #{$size}px;
+      }
   }
+
+  /* Set automatic margin on left */
+  &ml-auto {   margin-left: auto;  }
+
+  /* Set automatic margin on right */
+  &mr-auto {   margin-right: auto; }
+
+  /* Set automatic margin on left and right */
+  &mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

@@ -1,19 +1,21 @@
 /*
 
-FLOATS
-
+Float utility classes
 
 */
 
+// Floats
+.float-l 	  { float: left; }
+.float-r  	{ float: right; }
+.float-none { float: none; }
 
-.float-l 	{ float: left; }
-.float-r 	{ float: right; }
-
+// Clear Floats
 .clear 		{ clear: both; }
 .clear-l 	{ clear: left; }
 .clear-r 	{ clear: both; }
 
+// Clearfix to create new block elements
 .clearfix:before,
 .clearfix:after 	{	content: ""; display: table; }
 .clearfix:after 	{	clear: both; }
-.clearfix 			{	zoom: 1; } /* ie 6/7 */
+.clearfix 			  {	zoom: 1; }  /* ie 6/7 */

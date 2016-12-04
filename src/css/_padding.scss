@@ -1,12 +1,11 @@
 /*
 
-PADDING
+Padding space utilities
 
+Base:
+  padding = padding
 
-base:
- p = padding
-
-direction:
+Direction:
   t = top
   b = bottom
   l = left
@@ -15,49 +14,36 @@ direction:
   y = top / bottom
   a = all
 
-degree:
-  0 = none
-  1 = first step
-  2 = second step
-  3 = third step
-  4 = fourth step
-  5 = fifth step
-  6 = sixth step
-
-breakpoints:
-  sm = breakpoint-sm
-  md = breakpoint-md
-  lg = breakpoint-lg
-
 */
 
-// :root {
-//   --spacing-none: 0;
-//   --spacing-xs: 0.25rem;
-//   --spacing-sm: 0.5rem;
-//   --spacing-md: 1rem;
-//   --spacing-lg: 2em;
-//   --spacing-xlg: 3rem;
-//   --spacing-xxlg: 6rem;
-//   --spacing-xxxlg: 10rem;
-
-// }
-
+/* Add breakpoint prefixes to classnames */
 @include prefix {
+
   @for $i from 1 through length($spaces) {
-      &pa#{($i - 1)} {  padding:          nth($spaces, $i) + px; }
-      &pl#{($i - 1)} {  padding-left:     nth($spaces, $i) + px; }
-      &pr#{($i - 1)} {  padding-right:    nth($spaces, $i) + px; }
-      &pt#{($i - 1)} {  padding-top:      nth($spaces, $i) + px; }
-      &pb#{($i - 1)} {  padding-bottom:   nth($spaces, $i) + px; }
+    $size: nth($spaces, $i);
+    $scale: ($i - 1);
 
-      &px#{($i - 1)} {  padding-left:        nth($spaces, $i) + px;
-                        padding-right:       nth($spaces, $i) + px; }
+      /* set a {$scale} padding on all sides at breakpoint {$breakpoint} */
+      &pa#{$scale} {  padding:          #{$size}px; }
+      /* set a {$scale} padding on the left sides at breakpoint {$breakpoint} */
+      &pl#{$scale} {  padding-left:     #{$size}px; }
+      /* set a {$scale} padding on the right sides at breakpoint {$breakpoint} */
+      &pr#{$scale} {  padding-right:    #{$size}px; }
+      /* set a {$scale} padding on the top side at breakpoint {$breakpoint} */
+      &pt#{$scale} {  padding-top:      #{$size}px; }
+      /* set a {$scale} padding on the bottom side at breakpoint {$breakpoint} */
+      &pb#{$scale} {  padding-bottom:   #{$size}px; }
 
-      &py#{($i - 1)} {  padding-top:         nth($spaces, $i) + px;
-                        padding-bottom:      nth($spaces, $i) + px; }
+      /* set a {$scale} padding on the left and right side at breakpoint {$breakpoint} */
+      &px#{$scale} {
+        padding-left:        #{$size}px;
+        padding-right:       #{$size}px;
+      }
 
-
+      /* set a {$scale} padding on the top and bottom side at breakpoint {$breakpoint} */
+      &py#{$scale} {
+        padding-top:         #{$size}px;
+        padding-bottom:      #{$size}px;
+      }
   }
 }
-

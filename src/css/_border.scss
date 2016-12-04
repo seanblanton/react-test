@@ -1,7 +1,6 @@
 /*
 
-BORDERS
-
+Border Utility Classes
 
 */
 
@@ -40,10 +39,21 @@ BORDERS
 .bs-t-inset     { border-top-style: inset;          }
 .bs-t-outset    { border-top-style: outset;         }
 
+
+// Border Width Utilities
 @for $i from 1 through length($borderWidths) {
-    .bw#{($i - 1)} { border-width: nth($borderWidths, $i) + px; }
+    $size: nth($borderWidths, $i);
+    $scale: ($i - 1);
+
+    .bw#{$scale} { border-width: #{$size}px; }
+
 }
 
+// Border Radius itilities
 @for $i from 1 through length($borderRadii) {
-    .br#{($i - 1)} { border-radius: nth($borderRadii, $i) + px; }
+  $size: nth($borderRadii, $i);
+  $scale: ($i - 1);
+
+  .br#{$scale} { border-radius: #{$size}px; }
+
 }

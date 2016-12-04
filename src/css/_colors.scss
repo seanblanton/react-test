@@ -3,7 +3,7 @@
 COLOR VARIABLES
 
 
-$colors: ( 
+$colors: (
     white: rgba(255,255,255,1),
     black: rgba(0,0,0,1),
     blue: rgba(3,110,200,1),
@@ -15,10 +15,9 @@ $colors: (
 */
 
 
-/* BG Colors */
-
-
 @each $color, $value in $colors {
+
+        // Text Colors
         .color-#{$color}    {   color: rgba($value, 1.0);   }
         .color-#{$color}90  {   color: rgba($value, 0.9);   }
         .color-#{$color}80  {   color: rgba($value, 0.8);   }
@@ -31,6 +30,7 @@ $colors: (
         .color-#{$color}10  {   color: rgba($value, 0.1);   }
         .color-#{$color}05  {   color: rgba($value, 0.05);  }
 
+        // Background colors
         .bg-#{$color}       {   background-color: rgba($value, 1.0);    }
         .bg-#{$color}90     {   background-color: rgba($value, 0.9);    }
         .bg-#{$color}80     {   background-color: rgba($value, 0.8);    }
@@ -43,6 +43,7 @@ $colors: (
         .bg-#{$color}10     {   background-color: rgba($value, 0.1);    }
         .bg-#{$color}05     {   background-color: rgba($value, 0.05);   }
 
+        // Border colors
         .border-#{$color}    {   border-color: rgba($value, 1.0);   }
         .border-#{$color}90  {   border-color: rgba($value, 0.9);   }
         .border-#{$color}80  {   border-color: rgba($value, 0.8);   }
@@ -56,5 +57,3 @@ $colors: (
         .border-#{$color}05  {   border-color: rgba($value, 0.05);  }
 
 }
-
-
