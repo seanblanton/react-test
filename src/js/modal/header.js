@@ -2,6 +2,7 @@ import React from 'react';
 import style from '../../css/main.scss';
 import Title from './Title';
 import Close from './Close';
+import Box from './Box';
 
 class Header extends React.Component {
     constructor(props) {
@@ -10,10 +11,10 @@ class Header extends React.Component {
 
     render() {
         return (
-            <div className="xs-flex xs-flex-justify-between xs-px4 xs-pt4 xs-pb3 bs-b-solid bw1 border-gray20">
-              <Title className="xs-ib"> Share Settings </Title>
+            <Box>
+              <Title title="Share Settings"/>
               <Close className="xs-ib xs-flex-self-center"/>
-            </div>
+            </Box>
         );
     }
 }

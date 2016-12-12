@@ -1,18 +1,25 @@
 import React from 'react';
+import classNames from 'classnames'
 import style from '../../css/main.scss';
 
-class Title extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
-    render() {
-        return (
-            <h1 className={ "xs-fs3 xs-my0 color-black70 fw4 lh-heading" + " " + this.props.className } >
-                { this.props.children }
-            </h1>
-        );
-    }
+const Title = ({
+  title,
+  color = 'color-black70',
+  ...props
+  }) => {
+
+    const cx = classNames(
+      'xs-fs3',
+      'xs-my0',
+      'fw4',
+      'lh-heading',
+      color
+    )
+
+    return (
+      <div {...props} className={cx}> {title} </div>
+    )
 }
 
 export default Title;
