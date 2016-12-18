@@ -18,7 +18,7 @@ const Title = ({
     )
 
     return (
-      <div {...props} className={cx}> {title} </div>
+      <div {...props} className={cx}> { title ? title : props.children  } </div>
     )
 }
 

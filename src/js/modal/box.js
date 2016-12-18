@@ -3,31 +3,38 @@ import classNames from 'classnames'
 import style from '../../css/main.scss';
 
 
-const Box= ({
-  title,
-  px = "xs-px4",
-  py,
-  pt = "xs-pt4",
-  pb = "xs-pb3",
-  pa,
+const Box = ({
+  flex,
+  flexRow,
+  flexWrap,
+  flexJustify,
+  backgroundColor,
+  color,
+  width,
+  height,
   ...props
   }) => {
 
     const cx = classNames(
-      'xs-flex',
-      'xs-flex-justify-between',
-      'bs-b-solid',
-      'bw1',
-      'border-gray20',
-      px,
-      py,
-      pt,
-      pb,
-      pa,
+      flex,
+      flexRow,
+      flexWrap,
+      flexJustify,
+      'xs-pt4',
+      'xs-px4',
+      'xs-pb0',
+      backgroundColor,
+      color,
     )
 
+    const sx = {
+      width,
+      height,
+    }
+
+
     return (
-      <div {...props} className={cx}> {props.children} </div>
+      <div {...props} style={sx} className={cx}> {props.children} </div>
     )
 }
 

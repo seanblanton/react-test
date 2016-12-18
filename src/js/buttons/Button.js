@@ -1,18 +1,47 @@
 import React from 'react';
+import classNames from 'classnames'
 import style from '../../css/main.scss';
 
-class Button extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
-    render() {
-        return (
-            <div className={ "xs-ib v-middle xs-px4 xs-py2 xs-fs4 color-white lh-button bg-orange bw2 bs-solid border-orange br2" + " " + this.props.className } >
-                { this.props.children }
-            </div>
-        );
-    }
+const Button = ({
+  paddingX = 'xs-px4',
+  paddingY = 'xs-py2',
+  fontSize = 'xs-fs5',
+  color = 'color-white',
+  backgroundColor = 'bg-orange',
+  bw = 'bw1',
+  border = 'border-orange',
+  label,
+  mr,
+  ml,
+  ...props
+  }) => {
+
+    const cx = classNames(
+      'xs-ib',
+      'v-middle',
+      'lh-button',
+      'xs-my0',
+      'fw4',
+      'lh-heading',
+      'bs-solid',
+      'br2',
+      paddingX,
+      paddingY,
+      fontSize,
+      color,
+      backgroundColor,
+      bw,
+      border,
+      mr,
+      ml,
+    )
+
+    return (
+      <div {...props} className={cx}>
+        { props.children  }
+      </div>
+    )
 }
 
 export default Button;

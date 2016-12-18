@@ -11,8 +11,8 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Box>
-              <Title title="Share Settings"/>
+            <Box xsFlex flexJustify="xs-flex-justify-between">
+              <Title title="Share Settings" />
               <Close className="xs-ib xs-flex-self-center"/>
             </Box>
         );

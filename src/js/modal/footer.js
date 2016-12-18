@@ -13,7 +13,7 @@ class Footer extends React.Component {
     render() {
         return (
           <div className="xs-flex xs-flex-justify-start xs-px4 xs-pt3 xs-pb4 bs-t-solid bw1 border-gray20">
-            <Button className="xs-mr2"> Submit </Button>
+            <Button mr='xs-mr2'> Submit </Button>
             <ButtonSecondary> Cancel </ButtonSecondary>
           </div>
         );
