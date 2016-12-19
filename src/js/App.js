@@ -1,7 +1,10 @@
 import Header from './modal/Header';
 import Body from './modal/Body';
 import Footer from './modal/Footer';
-import Box from './modal/Box';
+import Full from './layout/Full';
+import Half from './layout/Half';
+import Quarter from './layout/Quarter';
+import Third from './layout/Third';
 import React from 'react';
 import style from '../css/main.scss';
 
@@ -18,7 +21,25 @@ class App extends React.Component {
                 <Body className="xs-fs5"> Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar   </Body>
                 <Footer />
             </div>
-            
+
+            <div className="clearfix">
+              <Full> test </Full>
+            </div>
+            <div className="clearfix">
+              <Half> test </Half>
+              <Half> test </Half>
+            </div>
+            <div className="clearfix">
+              <Third> test </Third>
+              <Third> test </Third>
+              <Third> test </Third>
+            </div>
+            <div className="clearfix">
+              <Quarter> test </Quarter>
+              <Quarter> test </Quarter>
+              <Quarter> test </Quarter>
+              <Quarter> test </Quarter>
+            </div>
           </div>
           );
     }

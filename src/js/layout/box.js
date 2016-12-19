@@ -12,6 +12,10 @@ const Box = ({
   color,
   width,
   height,
+  className,
+  p,
+  m,
+  display,
   ...props
   }) => {
 
@@ -20,21 +24,19 @@ const Box = ({
       flexRow,
       flexWrap,
       flexJustify,
-      'xs-pt4',
-      'xs-px4',
-      'xs-pb0',
       backgroundColor,
       color,
-    )
-
-    const sx = {
+      p,
+      m,
       width,
       height,
-    }
+      display,
+      className,
+    )
 
 
     return (
-      <div {...props} style={sx} className={cx}> {props.children} </div>
+      <div {...props} className={cx}> {props.children} </div>
     )
 }
 
