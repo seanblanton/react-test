@@ -32,6 +32,7 @@ const Box = ({
       height,
       display,
       className,
+      'tac'
     )
 
 

@@ -3,8 +3,10 @@ import Body from './modal/Body';
 import Footer from './modal/Footer';
 import Full from './layout/Full';
 import Half from './layout/Half';
-import Quarter from './layout/Quarter';
 import Third from './layout/Third';
+import Quarter from './layout/Quarter';
+import Sixth from './layout/Sixth';
+import Eigth from './layout/Eigth';
 import React from 'react';
 import style from '../css/main.scss';
 
@@ -23,22 +25,44 @@ class App extends React.Component {
             </div>
 
             <div className="clearfix">
-              <Full> test </Full>
+              <Full> Full </Full>
             </div>
             <div className="clearfix">
-              <Half> test </Half>
-              <Half> test </Half>
+              <Half> Half </Half>
+              <Half> Half </Half>
             </div>
             <div className="clearfix">
-              <Third> test </Third>
-              <Third> test </Third>
-              <Third> test </Third>
+              <Third> Third </Third>
+              <Third> Third </Third>
+              <Third> Third </Third>
             </div>
             <div className="clearfix">
-              <Quarter> test </Quarter>
-              <Quarter> test </Quarter>
-              <Quarter> test </Quarter>
-              <Quarter> test </Quarter>
+              <Quarter> Quarter </Quarter>
+              <Quarter> Quarter </Quarter>
+              <Quarter> Quarter </Quarter>
+              <Quarter> Quarter </Quarter>
+            </div>
+            <div className="clearfix">
+              <Sixth> Sixth </Sixth>
+              <Sixth> Sixth </Sixth>
+              <Sixth> Sixth </Sixth>
+              <Sixth> Sixth </Sixth>
+              <Sixth> Sixth </Sixth>
+              <Sixth> Sixth </Sixth>
+            </div>
+            <div className="clearfix">
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
+              <Eigth> Eigth </Eigth>
             </div>
 
           </div>
