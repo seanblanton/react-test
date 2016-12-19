@@ -6,26 +6,26 @@ Grid Utility Classes
 
 
 @mixin grid($cols) {
-    @include prefix {
         &col#{$cols}of#{$columns}  {
          width: ((100% / $columns ) * $cols);
          @content;
-       }
     }
 }
 
-@for $i from 1 to $columns {
-  @include grid($i) {  }
+  @include prefix {
+    @for $i from 1 through $columns{
+      @include grid($i) {  }
+    }
 }
 
 
 /* Responsive Max-width utility classes */
 @include prefix {
-
   @for $i from 1 through length($spaces) {
+      $size: nth($spaces, $i);
       /* keep the container from growing larger than this */
-      &maxw#{($i - 1)} { max-width:       nth($spaces, $i) + px; }
+      &maxw#{($i - 1)} { max-width:  #{$size}px; }
       /* keep the container from shrinking smaller than this */
-      &minw#{($i - 1)} { min-width:       nth($spaces, $i) + px; }
+      &minw#{($i - 1)} { min-width:  #{$size}px;}
   }
 }

@@ -40,13 +40,13 @@ module.exports = {
         new Purify({
             basePath: __dirname,
             paths: [
-                'dist/**/*.html',
-                'dist/**/*.js'
+                // 'dist/**/*.html',
+                // 'dist/**/*.js'
             ],
             resolveExtensions: ['.html','.js'],
             purifyOptions: {
-                minify: true,
-                rejected: true,
+                minify: false,
+                rejected: false,
                 info: true,
             }
         })

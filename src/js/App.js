@@ -15,7 +15,7 @@ class App extends React.Component {
 
     render() {
         return (
-          <div>
+          <div class="lh-body fw4 xs-pa0 xs-ma0 border-box sans-serif">
             <div className="xs-col5of12 bg-white border-gray20 br1 xs-mx-auto bw1 bs-solid border-gray40 shadow-2 xs-my4">
                 <Header />
                 <Body className="xs-fs5"> Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar   </Body>
@@ -40,6 +40,7 @@ class App extends React.Component {
               <Quarter> test </Quarter>
               <Quarter> test </Quarter>
             </div>
+
           </div>
           );
     }
