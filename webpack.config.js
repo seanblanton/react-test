@@ -45,7 +45,7 @@ module.exports = {
             ],
             resolveExtensions: ['.html','.js'],
             purifyOptions: {
-                minify: false,
+                minify: true,
                 rejected: false,
                 info: true,
             }
