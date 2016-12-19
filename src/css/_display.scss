@@ -8,17 +8,22 @@ Display Utilities
 @include prefix {
 
   // Include to cause an element to hide at a specific breakpoint
-  &hide           {   display: none; }
+  &hide                  {   display: none; }
 
   // display utilities
-  &block          {   display: block; }
-  &ib             {   display: inline-block; }
-  &inline         {   display: inline; }
+  &block                 {   display: block; }
+  &ib                    {   display: inline-block; }
+  &inline                {   display: inline; }
 
   // table utilities
-  &table          {   display: table; }
-  &table-cell     {   display: table-cell; }
-  &table-fixed    {   table-layout: fixed; }
+  &table                 {   display: table; }
+  &table-cell            {   display: table-cell; }
+  &table-fixed           {   table-layout: fixed; }
+
+  // vertical alignment
+  &vertical-align-top     {   vertical-align: top; }
+  &vertical-align-middle  {   vertical-align: middle; }
+  &vertical-align-bottom  {   vertical-align: bottom; }
 
 }
 

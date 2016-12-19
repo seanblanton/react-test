@@ -29,3 +29,7 @@ Grid Utility Classes
       &minw#{($i - 1)} { min-width:  #{$size}px;}
   }
 }
+
+@include prefix {
+    &minh100 { min-height: 100%; }
+}

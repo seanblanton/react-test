@@ -23,48 +23,6 @@ class App extends React.Component {
                 <Body className="xs-fs5"> Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar   </Body>
                 <Footer />
             </div>
-
-            <div className="clearfix">
-              <Full> Full </Full>
-            </div>
-            <div className="clearfix">
-              <Half> Half </Half>
-              <Half> Half </Half>
-            </div>
-            <div className="clearfix">
-              <Third> Third </Third>
-              <Third> Third </Third>
-              <Third> Third </Third>
-            </div>
-            <div className="clearfix">
-              <Quarter> Quarter </Quarter>
-              <Quarter> Quarter </Quarter>
-              <Quarter> Quarter </Quarter>
-              <Quarter> Quarter </Quarter>
-            </div>
-            <div className="clearfix">
-              <Sixth> Sixth </Sixth>
-              <Sixth> Sixth </Sixth>
-              <Sixth> Sixth </Sixth>
-              <Sixth> Sixth </Sixth>
-              <Sixth> Sixth </Sixth>
-              <Sixth> Sixth </Sixth>
-            </div>
-            <div className="clearfix">
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-              <Eigth> Eigth </Eigth>
-            </div>
-
           </div>
           );
     }

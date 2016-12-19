@@ -10,7 +10,7 @@ const Grid = ({
   }) => {
 
     return (
-        <Box {...props} p="xs-pa2" display="xs-block s-ib bs-solid"/>
+        <Box {...props} p="xs-pa2" display="xs-block s-table-cell xs-vertical-align-top bs-solid border-white bg-gray20"/>
     )
 }
 

@@ -56,4 +56,31 @@ $colors: (
         .border-#{$color}10  {   border-color: rgba($value, 0.1);   }
         .border-#{$color}05  {   border-color: rgba($value, 0.05);  }
 
+        // Border colors
+        .fill-#{$color}    {   fill: rgba($value, 1.0);   }
+        .fill-#{$color}90  {   fill: rgba($value, 0.9);   }
+        .fill-#{$color}80  {   fill: rgba($value, 0.8);   }
+        .fill-#{$color}70  {   fill: rgba($value, 0.7);   }
+        .fill-#{$color}60  {   fill: rgba($value, 0.6);   }
+        .fill-#{$color}50  {   fill: rgba($value, 0.5);   }
+        .fill-#{$color}40  {   fill: rgba($value, 0.4);   }
+        .fill-#{$color}30  {   fill: rgba($value, 0.3);   }
+        .fill-#{$color}20  {   fill: rgba($value, 0.2);   }
+        .fill-#{$color}10  {   fill: rgba($value, 0.1);   }
+        .fill-#{$color}05  {   fill: rgba($value, 0.05);  }
+
+        // Border colors
+        .stroke-#{$color}    {   stroke: rgba($value, 1.0);   }
+        .stroke-#{$color}90  {   stroke: rgba($value, 0.9);   }
+        .stroke-#{$color}80  {   stroke: rgba($value, 0.8);   }
+        .stroke-#{$color}70  {   stroke: rgba($value, 0.7);   }
+        .stroke-#{$color}60  {   stroke: rgba($value, 0.6);   }
+        .stroke-#{$color}50  {   stroke: rgba($value, 0.5);   }
+        .stroke-#{$color}40  {   stroke: rgba($value, 0.4);   }
+        .stroke-#{$color}30  {   stroke: rgba($value, 0.3);   }
+        .stroke-#{$color}20  {   stroke: rgba($value, 0.2);   }
+        .stroke-#{$color}10  {   stroke: rgba($value, 0.1);   }
+        .stroke-#{$color}05  {   stroke: rgba($value, 0.05);  }
+
+
 }

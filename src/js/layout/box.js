@@ -11,7 +11,7 @@ const Box = ({
   backgroundColor,
   color,
   width,
-  height,
+  height = 'auto',
   className,
   p,
   m,
@@ -32,7 +32,7 @@ const Box = ({
       height,
       display,
       className,
-      'tac'
+      'tac',
     )
 
 
